@@ -1,0 +1,11 @@
+celovpn /opt/celovpn
+celovpnservice /opt/celovpn
+netdown /opt/celovpn
+client.up.celovpn.sh /opt/celovpn
+client.down.celovpn.sh /opt/celovpn
+openvpn /opt/celovpn
+celovpn.desktop /usr/share/applications
+icons/16x16/apps/celovpn.png /usr/share/icons/hicolor/16x16/apps
+icons/192x192/apps/celovpn.png /usr/share/icons/hicolor/192x192/apps
+icons/32x32/apps/celovpn.png /usr/share/icons/hicolor/32x32/apps
+icons/512x512/apps/celovpn.png /usr/share/icons/hicolor/512x512/apps

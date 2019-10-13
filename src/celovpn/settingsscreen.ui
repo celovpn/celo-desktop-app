@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsScreen</class>
+ <widget class="QDialog" name="SettingsScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>646</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Celo VPN</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame
+{
+        background-color: #f8f8f8;
+        border: 0;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="spacing">
+         <number>9</number>
+        </property>
+        <item row="0" column="0" rowspan="2">
+         <widget class="QPushButton" name="backButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>71</width>
+            <height>57</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>71</width>
+            <height>57</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+        border:0px;
+        color: #ff0000;
+background: transparent;
+border-image: url(:/imgs/logo3-norm.png);
+}
+QPushButton:hover
+{
+border-image: url(:/imgs/logo3.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Advanced Settings</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="showLogsButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+        border:0px;
+        color: #ffffff;
+        border-image: url(:/imgs/b-showlogs-norm.png);
+}
+QPushButton:hover:!pressed
+{
+        border-image: url(:/imgs/b-showlogs-hover.png);
+}
+QPushButton:pressed
+{
+        border-image: url(:/imgs/b-showlogs-pressed.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="updateButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+        border:0px;
+        color: #ffffff;
+        border-image: url(:/imgs/b-update-norm.png);
+}
+QPushButton:hover:!pressed
+{
+        border-image: url(:/imgs/b-update-hover.png);
+}
+QPushButton:pressed
+{
+        border-image: url(:/imgs/b-update-pressed.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="startupCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Auto-launch app on startup</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="autoConnectCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Auto-connect when app starts</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="reconnectCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Re-connect when connection drops</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="insecureWifiCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Auto-connect when unsecured WiFi</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="killSwitchCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Kill internet when VPN disconnects
+(kill switch)</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGraphicsView" name="vline_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>2</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>2</width>
+       <height>240</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGraphicsView
+{
+        border-image: url(:/imgs/v-line-settings.png);
+}</string>
+     </property>
+     <property name="interactive">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">QFrame
+{
+        background-color: #f8f8f8;
+        border: 0;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="spacing">
+         <number>9</number>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="L_Country">
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+background: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string>Local OpenVPN port/encryption:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="e_LocalPort">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTipDuration">
+           <number>-5</number>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+border-radius: 3px;
+padding: 2px 10px 2px 10px;
+border: 0 transparent #b8d4e9;
+color: #444444;
+border-image: url(:/imgs/e-ip-inactive.png);
+}
+QLineEdit:focus
+{
+border-image: url(:/imgs/e-ip-active.png);
+}</string>
+          </property>
+          <property name="text">
+           <string>6842</string>
+          </property>
+          <property name="placeholderText">
+           <string>port</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="encryptionComboBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+color: #444444;
+
+border-image: url(:/imgs/dd-protocol.png);
+}
+QComboBox QAbstractItemView
+{
+subcontrol-origin: margin;
+subcontrol-position: top left;
+}
+QComboBox::drop-down
+{
+width: 25px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow
+{
+image: none;
+width: 25px;
+height: 25px;
+}
+QComboBox::down-arrow:hover
+{
+image: none;
+width: 25px;
+height: 25px;
+}
+
+QComboBox {
+        padding-left: 10px;
+        padding-right: 0px; /* space for the arrow */
+}
+
+QComboBox::drop-down {
+        subcontrol-origin: top;
+        subcontrol-position: top right;
+        width: 0px;
+        border-style: none;
+        border-image: none;
+}
+
+QComboBox QListView
+{
+background: solid #f7f7f7;
+height: 300;
+}
+QComboBox QListView::item
+{
+color: #202020;
+height: 24;
+border-image: url(:/imgs/dd-row.png);
+background: solid #f7f7f7;
+}
+QComboBox QListView::item:selected
+{
+color: #FFFFFF;
+border-image: url(:/imgs/dd-selectionrow.png);
+}</string>
+          </property>
+          <property name="currentText">
+           <string>Encryption</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Encryption</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="L_Country_2">
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+background: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string>Primary DNS:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="L_Country_3">
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+background: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string>Secondary DNS:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLineEdit" name="e_PrimaryDns">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTipDuration">
+           <number>-5</number>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+padding: 2px 10px 2px 10px;
+border: 0 transparent #b8d4e9;
+color: #444444;
+border-image: url(:/imgs/e-ip-inactive.png);
+}
+QLineEdit:focus
+{
+border-image: url(:/imgs/e-ip-active.png);
+}</string>
+          </property>
+          <property name="inputMask">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string notr="true">8.26.56.26</string>
+          </property>
+          <property name="placeholderText">
+           <string>___.___.___.___</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="e_SecondaryDns">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="toolTipDuration">
+           <number>-5</number>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+border-radius: 3px;
+padding: 2px 10px 2px 10px;
+border: 0 transparent #b8d4e9;
+color: #444444;
+border-image: url(:/imgs/e-ip-inactive.png);
+}
+QLineEdit:focus
+{
+border-image: url(:/imgs/e-ip-active.png);
+}</string>
+          </property>
+          <property name="inputMask">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string notr="true">8.20.247.20</string>
+          </property>
+          <property name="placeholderText">
+           <string>___.___.___.___</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="fixDNSCheckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Fix DNS leak</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="loggingButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox
+{
+        color: #b1b1b1;
+}
+QCheckBox::indicator
+{
+image: url(:/imgs/cb-norm.png);
+}
+QCheckBox:checked {
+color: #3c3c3c;
+}
+QCheckBox::indicator:checked
+{
+image: url(:/imgs/cb-checked.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Enable debug logging</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>e_PrimaryDns</sender>
+   <signal>editingFinished()</signal>
+   <receiver>SettingsScreen</receiver>
+   <slot>Validate_e_Dns()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>e_SecondaryDns</sender>
+   <signal>editingFinished()</signal>
+   <receiver>SettingsScreen</receiver>
+   <slot>Validate_e_SecondaryDns()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>595</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>e_LocalPort</sender>
+   <signal>editingFinished()</signal>
+   <receiver>SettingsScreen</receiver>
+   <slot>Validate_e_LocalPort()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

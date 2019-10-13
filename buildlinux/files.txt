@@ -1,0 +1,9 @@
+/usr/share/icons/hicolor/512x512/apps/celovpn.png
+/usr/share/icons/hicolor/16x16/apps/celovpn.png
+/usr/share/icons/hicolor/192x192/apps/celovpn.png
+/usr/share/icons/hicolor/32x32/apps/celovpn.png
+/usr/share/applications/celovpn.desktop
+/usr/lib/systemd/system/celovpn.service
+/usr/share/doc/celovpn/README
+/usr/share/doc/celovpn/changelog.gz
+/usr/share/doc/celovpn/copyright

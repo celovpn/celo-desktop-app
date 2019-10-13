@@ -1,0 +1,29 @@
+To build celo VPN Connect on linux you'll need the following:
+
+Qt 5.7.0 or newer built with -static option. Use the configureqt.sh script if wanted.
+Git clone of celovpn-desktop sources.
+
+After building Qt make sure it's qmake is in your path and do the following:
+
+cd buildlinux
+qmake ../src
+make
+cp celovpn/celovpn linuxfiles
+cp netdown/netdown linuxfiles
+
+Then the content of linuxfiles mostly goes into /opt/celovpn/.
+
+To package debian/ubuntu do the following:
+For 32 bit package:
+builddebian32.sh <version>
+
+For 64 bit package:
+builddebian64.sh <version>
+
+
+To package redhat/centos do the following:
+For 32 bit package:
+buildredhat32.sh
+
+For 64 bit package:
+buildredhat64.sh

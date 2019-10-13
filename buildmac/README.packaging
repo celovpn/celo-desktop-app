@@ -1,0 +1,15 @@
+This directory contains files required to build the Mac OSX installer for celoVPN
+
+- Directory contents:
+  - README.packaging: this file
+  - scripts/: Various scripts used to build app or dmg.
+  - scripts/pkg-dmg: Mozilla disk image creation script suite
+  - celo.icns: The icon used in the app bundle
+
+- Installer creation:
+  - To create the installer XCode has to be installed in Applications folder and XCode command-line tools also needs to be installed
+  - Build both netdown and launchopenvpn. Copy their binaries into Resources folder.
+  - qmake ../src
+  - make
+  - scripts/finishmacbuild.sh
+  - The resulting celovpn.dmg is a read only image ready to ship.

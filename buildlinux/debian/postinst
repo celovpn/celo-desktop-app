@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# fix permissions
+chown -R root:root /opt/celovpn/netdown
+chown -R root:root /opt/celovpn/celovpn
+chown -R root:root /opt/celovpn/openvpn
+
+if [ -x /bin/systemctl ]; then
+    systemctl enable celovpn
+    systemctl start celovpn
+fi
+
+#DEBHELPER#
+exit 0

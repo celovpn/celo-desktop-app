@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Celo VPN
+Comment=VPN connection to Celo VPN service
+Exec=/opt/celovpn/celovpn
+Terminal=false
+Icon=celovpn
+Categories=Qt;Network;
+StartupNotify=true

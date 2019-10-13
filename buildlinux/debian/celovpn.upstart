@@ -1,0 +1,15 @@
+# celovpn - Celo VPN Service.
+#
+# This task runs celovpn's service daemon.
+
+description	"Celo VPN service daemon"
+
+start on runlevel [2345]
+stop on shutdown
+expect daemon
+respawn
+
+script
+    exec /opt/celovpn/celovpnservice
+end script
+

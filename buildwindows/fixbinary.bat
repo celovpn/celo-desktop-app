@@ -1,0 +1,1 @@
+windeployqt.exe "%~1"

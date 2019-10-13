@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -x /bin/systemctl ]; then
+    systemctl disable celovpn
+    systemctl stop celovpn
+fi
+
+#DEBHELPER#
+exit 0
+

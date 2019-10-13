@@ -1,0 +1,10 @@
+[Unit]
+Description=celo vpn daemon
+
+[Service]
+Type=forking
+ExecStart=/opt/celovpn/celovpnservice
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
