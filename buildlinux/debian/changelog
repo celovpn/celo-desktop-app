@@ -1,3 +1,9 @@
+celovpn (2019.11.28.0) unstable; urgency=medium
+
+  * Updated packaging with initial release 2.1 build 4.
+
+ -- Jeremy Whiting <jeremypwhiting@gmail.com>  Tue, 28 Dec 2019 14:21:00 -0600
+
 celovpn (2018.08.14.0) unstable; urgency=medium
 
   * Updated packaging with initial release 2.0 build 4.

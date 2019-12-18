@@ -20,6 +20,6 @@
 #define VERSION_H
 
 #define BUILD_NUM 4
-#define VERSION "2.0"
+#define VERSION "2.1" //Bump version
 
 #endif // VERSION_H
