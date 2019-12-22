@@ -80,8 +80,9 @@ const std::vector<QString> & Setting::currentEncryptionProtocols()
     if (mProtocols[enc].empty()) {
         switch (enc) {
         case ENCRYPTION_RSA: {
+			//Sorting of the protocols and ports determine the default connection port
             const char * gs_protocols [] = {
-                "TCP 443 (RSA)"
+                "UDP 1194 (RSA)"
 //                , "TCP 1194 (RSA)"
 //                , "TCP 110 (RSA)"
 
@@ -89,19 +90,19 @@ const std::vector<QString> & Setting::currentEncryptionProtocols()
 
 //                , "UDP 443 (RSA)"
                 , "UDP 53 (RSA)"
-
-                , "UDP 1194 (RSA)"
+				, "TCP 443 (RSA)"
 //                , "UDP 1443 (RSA)"
 //                , "UDP 8080 (RSA)"
 //                , "UDP 9201 (RSA)"
             };
+			//Ports should correspond to protocols above
             const int gs_ports [] = {
-                443
+                1194
 //                , 110
 //                , 443
 //                , 843
                 , 53
-                , 1194
+                , 443
 //                , 443
 //                , 1443
 //                , 8080
@@ -677,7 +678,8 @@ void Setting::switchToNextNode()
 
 QString Setting::localPort()
 {
-    QString p = mSettings.value("e_LocalPort", "9090").toString();
+	//Local port, used to be 9090
+    QString p = mSettings.value("e_LocalPort", "11").toString();
     if (p.isEmpty())
         p = "6842";
     return p;

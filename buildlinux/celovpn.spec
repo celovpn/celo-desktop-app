@@ -16,13 +16,14 @@ Name:           celovpn
 Summary:        VPN client for celo.net.
 License:        GPL-2.0 and GPL-3.0
 Group:          Productivity/Networking/Web/Utilities
-Version:        2018.08.14
+Version:        2019.11.28
 Release:        0
 Url:            http://www.celo.net
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         celovpn-%version.tar.gz
 Conflicts:      celovpn < %version-%release
 Requires:	net-tools
+Requires:	openvpn
 Requires:	redhat-rpm-config
 
 # Do not check any files in env for requires

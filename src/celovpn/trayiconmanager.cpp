@@ -215,7 +215,7 @@ void TrayIconManager::createMenuActions()
     connect(mLogoutAction.get(), SIGNAL(triggered()), this, SLOT(logoutTriggered()));
 
     mCloseAction.reset(new QAction(//QIcon(":/icons-tm/close-red.png"),
-                           tr("Close"), this));
+                           tr("Quit"), this));
     connect(mCloseAction.get(), SIGNAL(triggered()), this, SLOT(closeTriggered()));
 }
 

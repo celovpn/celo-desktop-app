@@ -61,7 +61,7 @@ QString ServicePathHelper::openvpnFilename()
 #ifdef Q_OS_WIN
     return resourcesPath() + "/OpenVPN/bin/openvpn.exe";
 #else	// Q_OS_LINUX
-    return "/opt/celovpn/openvpn";
+    return "/user/sbin/openvpn"; //use local openvpn
 #endif
 #endif
 }

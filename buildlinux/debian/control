@@ -6,7 +6,7 @@ Maintainer: Jeremy Whiting <jeremypwhiting@gmail.com>
 Build-Depends: debhelper (>= 8.0.0) 
 
 Package: celovpn
-Depends: liblzo2-2, liblz4-1, libxcb-xinerama0, libxcb-render-util0, libxcb-icccm4
+Depends: net-tools, openvpn, liblzo2-2, liblz4-1, libxcb-xinerama0, libxcb-render-util0, libxcb-icccm4
 Architecture: any
 Description: VPN client for celo.net.
   celo VPN is a lightweight OpenVPN client specifically designed for the celo VPN network.

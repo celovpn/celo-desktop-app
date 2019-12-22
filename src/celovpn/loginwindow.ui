@@ -436,6 +436,9 @@ border-image: url(:/imgs/e-active.png);
      </property>
     </widget>
     <widget class="QLineEdit" name="ePsw">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>37</x>
@@ -467,8 +470,14 @@ QLineEdit:focus
 border-image: url(:/imgs/e-active.png);
 }</string>
      </property>
+	 <property name="inputMask">
+      <string/>
+     </property>
      <property name="text">
       <string/>
+     </property>
+	<property name="frame">
+      <bool>false</bool>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Password</enum>
